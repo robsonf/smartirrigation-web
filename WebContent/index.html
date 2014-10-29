@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>SmartIrrigation</title>
+<META HTTP-EQUIV="Refresh" CONTENT="30;URL=http://localhost:8080/smartirrigation/index.html">
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<div class="header">
+	<!-- <input type="text" id="searchKey"/>-->
+	<button id="btnOnOff">Ligar/Desligar</button> 
+	<button id="btnAdd">Novo Agendamento</button>
+</div>
+
+
+<div class="leftArea">
+<ul id="agendaList"></ul>
+</div>
+
+<form id="agendaForm">
+	
+<div class="mainArea">
+
+<table border='0'>
+<!-- <tr>
+<td><label>Usuario:</label>
+</td> <td><input id="username" name="username" type="text"  /></td>
+</tr>
+
+<tr>
+<td><label>Senha:</label>
+</td> <td><input id="username" name="username" type="password"  /></td>
+</tr>
+<tr>
+<td><label>Enviar:</label>
+</td> <td><button id="btnLogin">Enviar</button></td>
+</tr>
+
+ -->
+<tr>
+<td><label>Agendamento:</label>
+</td> <td><input id="agendaId" name="agendaId" type="text" disabled /></td>
+</tr>
+
+<tr>
+<td><label>Estado:</label>
+</td> <td><input type="checkbox" id="estado" name="estado" /></td>
+</tr>
+
+<tr>
+<td><label>Hora de Inicio:</label>
+</td> <td><input type="text" id="horaInicial" name="horaInicial" required /></td>
+</tr>
+
+<tr>
+<td><label>Hora de Fim:</label>
+</td> <td><input type="text" id="horaFinal" name="horaFinal" required /></td>
+</tr>
+
+</table>
+    
+<button id="btnSave">Salvar</button>
+<button id="btnDelete">Apagar</button>
+
+</div>
+
+<div class="rightArea">
+<table>
+<tr>
+<td colspan="2" align="center" bgcolor="#dddddd"><label>Setores</label></td> <td></td>
+</tr>
+
+<tr>
+<td><label>Setor 1:</label>
+</td> <td><input type="checkbox" id="s1" name="s1"/></td>
+</tr>
+
+<tr>
+<td><label>Setor 2:</label>
+</td> <td><input type="checkbox" id="s2" name="s2"/></td>
+</tr>
+
+
+<tr>
+<td><label>Setor 3:</label>
+</td> <td><input type="checkbox" id="s3" name="s3"/></td>
+</tr>
+
+<tr>
+<td><label>Setor 4:</label>
+</td> <td><input type="checkbox" id="s4" name="s4"/></td>
+</tr>
+
+<tr>
+<td ><label><br/></label></td> <td></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center" bgcolor="#dddddd"><label>Repeti&ccedil;&atilde;o</label></td> <td></td>
+</tr>
+
+<tr>
+<td><label>Segunda:</label>
+</td> <td><input type="checkbox" id="seg" name="seg"/></td>
+</tr>
+
+<tr>
+<td><label>Ter&ccedil;a:</label>
+</td> <td><input type="checkbox" id="ter" name="ter"/></td>
+</tr>
+
+<tr>
+<td><label>Quarta:</label>
+</td> <td><input type="checkbox" id="qua" name="qua"/></td>
+</tr>
+
+<tr>
+<td><label>Quinta:</label>
+</td> <td><input type="checkbox" id="qui" name="qui"/></td>
+</tr>
+
+<tr>
+<td><label>Sexta:</label>
+</td> <td><input type="checkbox" id="sex" name="sex"/></td>
+</tr>
+
+
+<tr>
+<td><label>Sabado:</label>
+</td> <td><input type="checkbox" id="sab" name="sab"/></td>
+</tr>
+
+<tr>
+<td><label>Domingo:</label>
+</td> <td><input type="checkbox" id="dom" name="dom"/></td>
+</tr>
+
+</table>
+    
+
+</div>
+
+</form>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
